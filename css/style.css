@@ -6,4 +6,42 @@
     color: orange;
 }
 
-/*  */
+/* latihan border */
+.border{
+    border-style: solid;
+    border-width: 20px;
+    border-color: orange;
+    border-radius: 50px;
+}
+
+.border2{
+    border: solid 3px blue;
+    /* arahnya left top to right top to right bot to left bot clockwise */
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* color */
+/* yah begitulah hex rgb, rgba, cmyk dll */
+.color{
+    border: solid 1px orange;
+    background-color: pink;
+    color: red;
+}
+
+/* background */
+/* jangan lupa keluar folder css nya soalnya css ada dalam folder */
+.bg-color{
+    background-color: orange;
+    background-image: url('../assets/slide2.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 250px;
+    /* scroll posisi nya tetap, fixed posisinya ikut tergantung dimana aset di tempatkan */
+    background-attachment: scroll;
+}
+
+/* command singkat background */
+.bg-short{
+    background: gold url('../assets/gambar1.png') no-repeat top right scroll;
+}
