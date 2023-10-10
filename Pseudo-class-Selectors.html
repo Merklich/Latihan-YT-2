@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Styling</title>
+</head>
+
+<style>
+    .pertama{
+        padding: 20px;
+        background-color: green;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .pertama:hover{
+        background-color: orange;
+    }
+
+    /* :first-child selalu setelah parent pertama dan child di parent ke 2 juga akan terpengaruh */
+    /* :last-child sama dengan first cuman mengambil yang terakhir */
+    /* body juga termasuk parent */
+    /* link lengkap pseudo classes = https://www.w3schools.com/css/css_pseudo_classes.asp */
+
+    p:first-child{
+        background-color: aqua;
+        color: orange;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="pertama">
+        isi text
+    </div>
+    <div>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+    </div>
+    <div>
+        <p>2</p>
+        <p>3</p>
+    </div>
+</body>
+</html>

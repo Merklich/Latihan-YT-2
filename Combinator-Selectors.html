@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lathihan CSS</title>
+</head>
+
+<!-- <style> di html pengganti css -->
+<!-- # adalah id -->
+<!-- sedangkan . adalah class  -->
+<!-- universal selector atau * paling lemah jadi pasti ketimpa dengan yang lain -->
+
+<style>
+*{
+    color: green;
+}
+
+p{
+    color: blue;
+}
+
+#paragraf2{
+    background-color: yellow;
+    color: red;
+}
+
+.contoh{
+    text-align: center;
+}
+
+/* style grouping mencakup beberapa style sekaligus */
+
+.h1, .h2, .h3 {
+    text-align: center;
+}
+
+.h1{
+    color: black ;
+}
+
+.h2{
+    color: blue ;
+}
+
+/* descendant selector */
+div p{
+    background-color: aquamarine;
+}
+
+/* kalau x > y artinya semua yang ada di x akan berpengaruh terhadap y, y ini bisa class atau id yang berada di x */
+/* kalau x + y artinya yang ada di x setelah y, akan terpengaruh style nya  */
+/* kalau x ~ y artinya yang ada di x, y nya akan ter style kalau diluar y tidak akan terpengaruh tidak berlaku didalam div atau parent yang lain */
+
+
+div > p{
+    background-color: yellow;
+}
+
+</style>
+
+<!-- id hanya boleh ada 1 -->
+
+<body>
+    <p id="paragraf1" class="contoh">paragraf 1</p>    
+    <p id="paragraf2" class="contoh">paragraf 2</p>    
+    <p id="paragraf3" class="contoh">paragraf 3</p>
+    <div>
+        <h1 class="h1">Judul 1</h1>
+        <h2 class="h2">Judul 2</h2>
+        <h3 class="h3">Judul 3</h3>
+    </div>
+    <div>
+        <h1>Judul 1</h1>
+        <h2>Judul 2</h2>
+        <h3>Judul 3</h3>
+    </div>
+
+<!-- latihan combinator  -->
+    <div>
+        <p>lorem</p>
+        <p>Lorem, ipsum dolor.</p>
+        <section>
+            <p>Lorem ipsum dolor sit.</p>
+            <label for="">ini label</label>
+        </section>
+    </div>
+    <p>Lorem, ipsum.</p>
+</body>
+
+
+</html>

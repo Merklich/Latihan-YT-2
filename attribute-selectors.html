@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selectors</title>
+</head>
+
+<style>
+
+a[href="http://google.com"]{
+    color: green;
+}
+
+a[href="http://facebook.com"]{
+    border: solid 2px;
+    background-color: yellow;
+}
+p[class~="dolo"]{
+    background-color: orange;
+}
+
+/* | adalah single attribut tidak bisa di tambah dengan style yang lain kecuali pake -  */
+
+p[class|="dolor"]{
+    background-color: red;
+}
+
+/* ^ tanda ini akan berpengaruh terhadap kata pertama yang mengandung atau di sambung di value tersebut */
+
+p[class^="dolora"]{
+    background-color: green;
+}
+
+/* $ tanda ini berlaku untuk yang akhiran nya saja yang terpengaruh oleh value tersebut */
+
+p[class$="dol"]{
+    background-color: rgb(128, 0, 107);
+}
+
+/* * untuk yang bintang begitulah mau di depan di belakang di tengah asal ada value */
+
+p[class*="asd"]{
+    background-color: rgb(0, 98, 128);
+}
+</style>
+
+<body>
+    <div>
+        <a href="http://google.com">ke google</a>
+    </div>
+    <div>
+        <a href="http://facebook.com">ke facebook</a>
+    </div>
+    <div>
+        <p class="dolo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nostrum, corrupti enim voluptatibus maiores rem recusandae voluptates ullam obcaecati veniam?</p>
+        <p class="dolora 1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolores, perspiciatis incidunt est alias possimus explicabo quidem, optio ex ducimus, cumque quia suscipit impedit quod? Eum perferendis enim ducimus quos! </p>
+        <p class="dolor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolores, perspiciatis incidunt est alias possimus explicabo quidem, optio ex ducimus, cumque quia suscipit impedit quod? Eum perferendis enim ducimus quos! </p>
+        <p class="kjhklgjhdol">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolores, perspiciatis incidunt est alias possimus explicabo quidem, optio ex ducimus, cumque quia suscipit impedit quod? Eum perferendis enim ducimus quos! </p>
+        <p class="kjhklgjhdolasdafasd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolores, perspiciatis incidunt est alias possimus explicabo quidem, optio ex ducimus, cumque quia suscipit impedit quod? Eum perferendis enim ducimus quos! </p>
+    </div>
+</body>
+</html>

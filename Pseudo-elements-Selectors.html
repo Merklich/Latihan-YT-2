@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements Selectors</title>
+</head>
+
+<style>
+    .pertama::first-letter{
+        color: white;
+        background-color: black;
+        font-size: 50px;
+    }
+
+    /* before after untuk menyisipkan aset mau itu tulisan gambaratau */
+    
+    .kedua::before{
+        content: "<<";
+    }
+    .kedua::after{
+        content: ">>";
+    }
+</style>
+
+<body>
+    <div class="pertama">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis rerum cum necessitatibus illo? Debitis similique rem harum cum exercitationem dolorem quia aliquid nulla voluptates quibusdam maxime voluptatum ratione, amet nemo, sint in? Nesciunt saepe ducimus recusandae, non amet quidem quia ipsum enim libero similique sequi nam tempora delectus necessitatibus nobis voluptas dolorem deleniti nihil, atque illum laboriosam earum facilis excepturi quam. Debitis, totam vel eos eveniet voluptas consectetur odit sit aliquid aut fugiat nemo, cumque quas laudantium blanditiis voluptates quidem. Officia, nesciunt repudiandae. Ratione ad, corporis doloribus sed ipsam autem nobis quod qui repudiandae molestiae cumque cupiditate vel numquam beatae consectetur, officiis minus modi similique iure fuga. Est corrupti veritatis quo nostrum asperiores, vel perspiciatis vero saepe nemo necessitatibus iusto delectus eveniet excepturi voluptatem animi fugiat temporibus sed suscipit beatae possimus? Itaque officia provident a repudiandae, unde quisquam officiis veritatis saepe perferendis facilis nobis, perspiciatis nesciunt! Praesentium eligendi maxime necessitatibus repudiandae perferendis fuga, rem, beatae odit numquam rerum impedit obcaecati, nam voluptate eum natus voluptatum accusamus libero est aliquid. Magni exercitationem dolorem inventore. Asperiores excepturi nostrum amet magnam veniam, neque a sapiente quos minima odio ex dicta nihil beatae at, molestias adipisci maiores. Esse sunt expedita, pariatur sit dolore corrupti!
+    </div>
+    <div>
+        <p class="kedua">paragraf 1</p>
+    </div>
+</body>
+</html>
